@@ -4,37 +4,3 @@ body {
     font-family: Copperplate, sans-serif;
 }
 
-/*Header*/
-.header {
-    position: static;
-    bottom:0;
-    left:0;
-    width:100%;
-    padding:10px;
-    margin-bottom: 20px;
-    background: rgba(83, 1, 46, 0.9);
-}
-
-h1 {
-color: #fff;
-font-family: Copperplate, sans-serif;
-display: block;
-font-size:32px;
-padding:10px;
-text-align:center;
-margin:10px;
-}
-
-.footer {
-position: fixed;
-bottom:0;
-left:0;
-width:100%;
-text-align:center;
-padding:1rem;
-padding-bottom: 1px;
-background: rgba(83, 1, 46, 0.9);
-color: #fff;
-font-family: Copperplate, sans-serif;
-}
-
