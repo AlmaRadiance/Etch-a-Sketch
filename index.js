@@ -41,12 +41,18 @@ newDiv.style.marginTop = "5px";
 newDiv.style.borderRadius="15px";
 newDiv.style.borderColor="rgba(83, 1, 46, 0.9)";
 
+
+  
+
+//const iconStyle = "font-size: 24px; margin-right: 8px;";
+
 const button1 = document.createElement('button'); 
-button1.textContent = 'RESET';
+button1.innerHTML = '<i class="fas fa-redo"></i> RESET';
+//button1.textContent = 'RESET';
+button1.classList.add('icon-button');
 button1.style.color = 'rgba(83, 1, 46, 0.9)';
 button1.style.backgroundColor = 'white';
-//button1.style.margin = '90px';
-button1.style.marginLeft = '120px';
+button1.style.marginLeft = '180px';
 button1.style.width = '100px';
 button1.style.height = '40px';
 button1.style.borderRadius = '45px';
@@ -59,13 +65,12 @@ button1.style.paddingTop="1px";
 button1.style.marginTop="120px";
 button1.style.alignItems = "center"; 
 
-
 const button2 = document.createElement('button'); 
-button2.textContent = 'RANDOM';
+button2.innerHTML = '<i class="fas fa-random"></i> RANDOM';
+//button2.textContent = 'RANDOM';
 button2.style.color = 'rgba(83, 1, 46, 0.9)';
 button2.style.backgroundColor = 'white';
-//button2.style.margin = '90px';
-button2.style.marginLeft = '120px';
+button2.style.marginLeft = '180px';
 button2.style.width = '100px';
 button2.style.height = '40px';
 button2.style.borderRadius = '45px';
@@ -79,10 +84,11 @@ button2.style.marginTop="10px";
 button2.style.alignItems = "center"; 
 
 const button3 = document.createElement('button'); 
-button3.textContent = 'BLACK';
+button3.innerHTML = '<i class="fas fa-paint-brush"></i> BLACK';
+//button3.textContent = 'BLACK';
 button3.style.color = 'rgba(83, 1, 46, 0.9)';
 button3.style.backgroundColor = 'white';
-button3.style.marginLeft = '120px';
+button3.style.marginLeft = '180px';
 button3.style.width = '100px';
 button3.style.height = '40px';
 button3.style.borderRadius = '45px';
@@ -96,11 +102,11 @@ button3.style.marginTop="10px";
 button3.style.alignItems = "center"; 
 
 const button4 = document.createElement('button'); 
-button4.textContent = 'SET SIZE';
+button4.innerHTML = '<i class="fas fa-cogs"></i> SET SIZE';
+//button4.textContent = 'SET SIZE';
 button4.style.color = 'rgba(83, 1, 46, 0.9)';
 button4.style.backgroundColor = 'white';
-button4.style.marginLeft = '120px';
-//button4.style.margin = '90px';
+button4.style.marginLeft = '180px';
 button4.style.width = '100px';
 button4.style.height = '40px';
 button4.style.borderRadius = '45px';

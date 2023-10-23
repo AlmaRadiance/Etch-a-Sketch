@@ -4,3 +4,34 @@ body {
     font-family: Copperplate, sans-serif;
 }
 
+
+
+.icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-button i {
+    margin-right: 8px;
+  }
+  
+  
+  /* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    .icon-button {
+      margin-left: 0;
+      width: 100%;
+      margin-top: 10px;
+      text-align: center; 
+    }
+
+    .icon-button i {
+        margin-right: 4px;
+
+        button {
+            margin-left: 0 !important;
+            width: 100% !important; 
+    }
+}
+}
