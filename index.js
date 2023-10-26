@@ -40,11 +40,9 @@ newDiv.style.transform = "translate(-50%, -50%)";
 newDiv.style.marginTop = "5px";
 newDiv.style.borderRadius="15px";
 newDiv.style.borderColor="rgba(83, 1, 46, 0.9)";
+newDiv.style.boxShadow="2px 7px 20px 9px rgba(83, 1, 46, 0.6)";
 
-
-  
-
-//const iconStyle = "font-size: 24px; margin-right: 8px;";
+const iconStyle = "font-size: 24px; margin-right: 8px;";
 
 const button1 = document.createElement('button'); 
 button1.innerHTML = '<i class="fas fa-redo"></i> RESET';
@@ -68,6 +66,7 @@ button1.style.alignItems = "center";
 const button2 = document.createElement('button'); 
 button2.innerHTML = '<i class="fas fa-random"></i> RANDOM';
 //button2.textContent = 'RANDOM';
+button2.classList.add('icon-button');
 button2.style.color = 'rgba(83, 1, 46, 0.9)';
 button2.style.backgroundColor = 'white';
 button2.style.marginLeft = '180px';
@@ -119,6 +118,17 @@ button4.style.paddingTop="1px";
 button4.style.marginTop="10px";
 button4.style.alignItems = "center"; 
 
+const buttonContainer = document.createElement('div');
+buttonContainer.classList.add('button-container');
+    buttonContainer.style.position = 'absolute';
+    buttonContainer.style.top = '50%';
+    buttonContainer.style.left = '0';
+    buttonContainer.style.transform = 'translateY(-50%)';
+    buttonContainer.style.display = 'flex';
+    buttonContainer.style.flexDirection = 'column';
+    buttonContainer.style.gap = '10px';
+
+
 //footer
 const footer=document.createElement('footer');
 footer.classList.add('footer');
@@ -144,4 +154,10 @@ document.body.appendChild(button2);
 document.body.appendChild(button3);
 document.body.appendChild(button4);
 document.body.appendChild(footer);
+/*document.body.appendChild(buttonContainer);
+    buttonContainer.appendChild(button1);
+    buttonContainer.appendChild(button2);
+    buttonContainer.appendChild(button3);
+    buttonContainer.appendChild(button4);
+*/
 });
