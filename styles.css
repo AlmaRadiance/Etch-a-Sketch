@@ -1,5 +1,5 @@
 
- @media screen and (min-width:400px) {
+ /*@media screen and (min-width:400px) {
     body{
         font-family: Copperplate, sans-serif;
         margin:0;  
@@ -58,3 +58,43 @@
     gap: 10px;
 }
 */
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto; 
+}
+
+.grid-square {
+    width: 20px; 
+    height: 20px; 
+    border: 1px solid #000; 
+}
+
+.container {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+}
+
+.border-container {
+    border: 10px solid #000; 
+    display: inline-block; 
+    padding: 10px;
+}
