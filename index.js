@@ -3,14 +3,25 @@ const gridContainer = document.querySelector('.grid-container');
 
 // Function to create the grid
 function createGrid(rows, cols) {
+    const squareSize = ((600 / rows)-2).toFixed(2);
     for (let i = 0; i < rows; i++) {
         for (let j = 0; j < cols; j++) {
             const gridSquare = document.createElement('div');
             gridSquare.classList.add('grid-square');
+           gridSquare.style.width = squareSize + 'px';
+            gridSquare.style.height = squareSize + 'px';
+            gridSquare.style.border = '1px solid black';
+
             gridContainer.appendChild(gridSquare);
         }
     }
+
+ // Set the CSS properties for the grid squares after they have been created
+ gridContainer.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
+ gridContainer.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
 }
+
+
 
 // Initial creation of the grid
 createGrid(16, 16);

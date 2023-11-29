@@ -45,19 +45,8 @@
         font-family: Copperplate, sans-serif;
         margin:0;  
     }
-}
+}*/
 
-
-/*.button-container {
-    position: fixed;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-*/
 
 
 body {
@@ -76,12 +65,7 @@ h1{
 	text-transform: uppercase;
 } 
 
-.header{
-    display: flex;
-    flex-direction: row;
-}
-
-#resize-button {
+.header button{
     margin: 30px auto;
 	border-radius: 20px;
 	font-size: 20px;
@@ -92,53 +76,8 @@ h1{
     font-family: 'Papyrus', sans-serif, cursive;
 }
 
-#resize-button:hover{
-    border:4px solid rgb(23, 171, 169);
-}
-
-#random-color-button {
-    margin: 30px auto;
-	border-radius: 20px;
-	font-size: 20px;
-	font-weight: bold;
-	padding: 5px 20px;
-	border: 4px solid black;
-	outline: none;
-    font-family: 'Papyrus', sans-serif, cursive;
-}
-
-#random-color-button:hover{
-    border:4px solid rgb(23, 171, 169);
-}
-
-#black-color-button{
-    margin: 30px auto;
-	border-radius: 20px;
-	font-size: 20px;
-	font-weight: bold;
-	padding: 5px 20px;
-	border: 4px solid black;
-	outline: none;
-    font-family: 'Papyrus', sans-serif, cursive;
-}
-
-#black-color-button:hover{
-    border:4px solid rgb(23, 171, 169);
-}
-
-#erase-button{
-    margin: 30px auto;
-	border-radius: 20px;
-	font-size: 20px;
-	font-weight: bold;
-	padding: 5px 20px;
-	border: 4px solid black;
-	outline: none;
-    font-family: 'Papyrus', sans-serif, cursive;
-}
-
-#erase-button:hover{
-    border:4px solid rgb(23, 171, 169);
+.header button:hover {
+    border: 4px solid rgb(23, 171, 169);
 }
 
 .grid-container {
